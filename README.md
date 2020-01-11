@@ -16,8 +16,6 @@ an initiation.
 
 [**https://docs.docker.com/engine/reference/commandline/docker/**](https://docs.docker.com/engine/reference/commandline/docker/)
 
-[**https://docs.docker.com/engine/reference/commandline/docker/**](https://docs.docker.com/engine/reference/commandline/docker/)
-
 # How to Docker
 
 - [ ]  **1- Create a virtual machine with docker-machine using the virtualbox driver, and named Char**
