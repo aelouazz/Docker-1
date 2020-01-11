@@ -79,7 +79,7 @@ to fix all four environment variables with one command, without using shell’s 
 
     > **More infos:** [https://docs.docker.com/engine/reference/run/](https://docs.docker.com/engine/reference/run/)
 
-- [ ]  **6- Launch an nginx container, available on Docker Hub, as a background task. It should be named overlord, be able to restart on its own, and have its 80 port attached to the 5000 port of Char.** You can check that your container functions properly by visiting http://<ip-de-char>:5000 on your web browser.
+- [ ]  **6- Launch an nginx container, available on Docker Hub, as a background task. It should be named overlord, be able to restart on its own, and have its 80 port attached to the 5000 port of Char.** You can check that your container functions properly by visiting http://&lt;ip-de-char&gt;:5000 on your web browser.
 
         docker run -d -p 5000:80 --name overlord --restart=always nginx
 
