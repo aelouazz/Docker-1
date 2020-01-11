@@ -65,15 +65,15 @@ to fix all four environment variables with one command, without using shell’s 
         docker pull hello-world
         # **pull** pulls an image or a repository from a registry
         
-        # **To check results:
-        docker image ls**
+        # To check results:
+        docker image ls
 
     > **More infos:** [https://ropenscilabs.github.io/r-docker-tutorial/04-Dockerhub.html](https://ropenscilabs.github.io/r-docker-tutorial/04-Dockerhub.html)
 
 - [ ]  **5- Launch the hello-world container, and make sure that it prints its welcome message, then leaves it**
 
-        # **as easy as:
-        docker run hello-world**
+        # As easy as:
+        docker run hello-world
 
     The **docker run** command must specify an IMAGE to derive the container from
 
@@ -89,15 +89,8 @@ to fix all four environment variables with one command, without using shell’s 
 
     **-p** or **--publish list**    Publish a container's port(s) to the host
 
-    **-p** is a ports mapping <HOST PORT>:<CONTAINER PORT>
+    **-p** is a ports mapping [HOST PORT]:[CONTAINER PORT]
 
-    **-d** or **--detach**           Run container in background and print container ID
-
-    **--name** [name]          Assign a name to the container
-
-    **-p** or **--publish list**    Publish a container's port(s) to the host
-
-    **-p** is a ports mapping <HOST PORT>:<CONTAINER PORT>
 
     **--restart** to specify a container’s restart policy. A restart policy controls whether the Docker daemon restarts a container after exit
 
