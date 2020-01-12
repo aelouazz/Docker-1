@@ -95,3 +95,13 @@ to fix all four environment variables with one command, without using shell’s 
     **--restart** to specify a container’s restart policy. A restart policy controls whether the Docker daemon restarts a container after exit
 
     > **More infos:** [https://docs.docker.com/engine/reference/run/#restart-policies---restart](https://docs.docker.com/engine/reference/run/#restart-policies---restart)
+
+- [ ]  **7- Get the internal IP address of the overlord container without starting its shell and in one command**
+
+        docker inspect -f '{{.NetworkSettings.IPAddress}}' overlord
+
+    **inspect**   Returns low-level information on Docker objects
+
+    **-f**             Formats the output using the given Go template
+
+    > **More infos:** [https://docs.docker.com/engine/reference/commandline/inspect/](https://docs.docker.com/engine/reference/commandline/inspect/)
