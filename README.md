@@ -1,5 +1,7 @@
 # Docker-1
 
+**Author: [aelouazz](https://www.github.com/aelouazz)**
+
 ### Now, i am thinking containers!!
 
 ---
@@ -130,6 +132,6 @@ to fix all four environment variables with one command, without using shell’s 
 
         docker volume create --name hatchery
 
-    **to list all volumes: "**docker volume ls"
+    **to list all volumes:** "docker volume ls"
 
     > **More infos:** [https://docs.docker.com/engine/reference/commandline/volume_create/](https://docs.docker.com/engine/reference/commandline/volume_create/)
