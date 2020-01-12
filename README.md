@@ -105,3 +105,31 @@ to fix all four environment variables with one command, without using shell’s 
     **-f**             Formats the output using the given Go template
 
     > **More infos:** [https://docs.docker.com/engine/reference/commandline/inspect/](https://docs.docker.com/engine/reference/commandline/inspect/)
+
+- [ ]  **8- Launch a shell from an alpine container, and make sure that you can interact directly with the container via your terminal, and that the container deletes itself once the shell’s execution is done**
+
+        docker run -it --rm alpine /bin/sh
+
+    **-i** or **--interactive**     Keep STDIN open even if not attached.
+
+    **-t** or **--tty**                 Allocate a pseudo-TTY.
+
+    **--rm**                         Automatically remove the container when it exits
+
+    > **More infos:** [http://containertutorials.com/alpine/get_started.html](http://containertutorials.com/alpine/get_started.html)
+
+- [ ]  **9- From the shell of a debian container, install via the container’s package manager everything you need to compile C source code and push it onto a git repo (of course, make sure before that the package manager and the packages already in the container are updated).** For this exercise, you should only specify the commands to be run directly in the container
+
+        apt-get update
+        apt-get upgrade -y
+        apt-get install build-essential git -y
+
+    we need to lunch the container first using: "**docker run -it --rm ubuntu**"
+
+- [ ]  **10- Create a volume named hatchery**
+
+        docker volume create --name hatchery
+
+    **to list all volumes: "**docker volume ls"
+
+    > **More infos:** [https://docs.docker.com/engine/reference/commandline/volume_create/](https://docs.docker.com/engine/reference/commandline/volume_create/)
